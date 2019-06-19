@@ -1,0 +1,109 @@
+$font-size:18px;
+$font-color:#fff;
+$one:left;
+$two:right;
+$bgcolor:#5fc0cd;
+$usecolor:#eff0f4;
+*{
+    padding: 0;
+    margin: 0;
+}
+.cursor {
+    cursor: pointer;
+}
+.header {
+    color: $font-color;
+    background-color: $bgcolor;
+}
+.header_top {
+    display: flex;
+    width: 95%;
+    margin:auto;
+    justify-content: space-between;
+    line-height: 3;
+    align-items: center;
+}
+.header_middle {
+    font-size: $font-size;
+}
+.main {
+    padding-top: 16px;
+    padding-bottom: 40px;
+    background-color: $usecolor;
+}
+.information-1 {
+    position: relative;
+    height: 49px;
+    padding-top: 5px;
+    color: $usecolor;
+    background-color: $font-color;
+    p {
+        position: absolute;
+        width: 27px;
+        height: 41px;
+        margin-#{$one}:23px;
+        border-right: 2px solid #eff0f4;
+        padding-right: 19px;
+        transform: scale(0.8);
+        background: url(../image/iphone.png) no-repeat;
+    }
+
+    input {
+        position: absolute;
+        left: 85px;
+        width: 74%;
+        border: none;
+        line-height: 3.5; 
+        outline: none;
+
+    }
+}
+.information-2 {
+    position: relative;
+    height: 49px;
+    padding-top: 5px;
+    margin-top: 16px;
+    color: $usecolor;
+    background-color: $font-color;
+    p {
+        position: absolute;
+        width: 27px;
+        height: 44px;
+        margin-#{$one}:23px;
+        border-right: 2px solid #eff0f4;
+        padding-right: 19px;
+        transform: scale(0.8);
+        background: url(../image/locked.png) no-repeat;
+    }
+
+    input {
+        position: absolute;
+        left: 85px;
+        width: 74%;
+        border: none;
+        line-height: 3.5; 
+        outline: none;
+
+    }
+}
+.bottom {
+    line-height: 2.5;
+    text-align: center;
+    background-color: $bgcolor;
+    span {
+        font-size: 22px;
+        margin: auto;
+        color: $font-color;
+        cursor: pointer;
+    }
+}
+.footer {
+    text-align: right;
+    line-height: 2;
+    color: $bgcolor;
+    color: 32px;
+    span {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
